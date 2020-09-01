@@ -1,0 +1,150 @@
+/* styling the header */
+
+header { 
+
+    padding: 50px; 
+    color: yellow;
+    font-size: 40px;	
+    background-color: navy;
+    clear: left; 
+    text-align: center; 
+    margin-top: -50px;
+     
+}
+
+/* styling the body */
+body{ 
+ 
+ background:#758CE9; 
+ background-size:1600px 1000px; 
+padding-top:40px;  
+text-align:center; 
+color:black;
+
+} 
+ 
+ /* Using 'header' class for styling */
+.header{ 
+
+ color: black;
+ text-align:center;
+ font-size: 33px; 
+ font-family: Verdana, Geneva, sans-serif; 
+
+} 
+ 
+/* Using 'pic1' class for styling */ 
+.pic1{
+   
+ height: 250px;
+ width: 200px; 
+ margin-right:100px; 
+} 
+ 
+ 
+ /* Using hover effect on 'pic1' class */
+.pic1:hover{ 
+
+ transition: 1s ease;
+ background-color: white; 
+ border-radius: 50px 50px 50px 0px; 
+ opacity: 0.8;
+   
+} 
+ 
+ /* Using 'pic2' class for styling */
+.pic2{ 
+
+ height: 250px;
+ width: 200px; 
+ margin-right:100px; 
+} 
+ 
+  /* Using hover effect on 'pic2' class */
+.pic2:hover{ 
+
+  transition: 1s ease;
+  background-color: white; 
+  border-radius: 50px 50px 50px 0px; 
+  opacity: 0.8;
+  
+} 
+ 
+ /* Using 'pic3' class for styling */ 
+.pic3{
+	
+ height: 250px;
+ width: 200px; 
+ margin-right:100px;
+ 
+} 
+ 
+/* Using hover effect on 'pic3' class */ 
+.pic3:hover{ 
+ 
+  transition: 1s ease;
+  background-color: white; 
+  border-radius: 50px 50px 50px 0px; 
+  opacity: 0.8;
+
+ }
+
+/* Using 'pic3' class for styling */ 
+ .pic4{ 
+ 
+ height: 250px;
+ width: 200px; 
+ margin-right:100px;
+ 
+} 
+ 
+/* Using hover effect on 'pic4' class */ 
+.pic4:hover{ 
+
+  transition: 1s ease;
+  background-color: white; 
+  border-radius: 50px 50px 50px 0px; 
+  opacity: 0.8;
+  
+ }
+
+/* Using 'tooltip' class for styling */  
+.tooltip {
+	
+    border-bottom: 1.5px dotted black;      
+    position: relative;     
+    display: inline-block;
+	
+} 
+
+/* Styling tooltip text */ 
+
+.tooltip .tooltiptext { 
+
+    background-color: green;
+    visibility: hidden; 
+    width: 140px; 
+    border-radius: 20px; 
+    padding: 6px 0; 
+    text-align: center; 
+    color: black;
+     
+ 
+    /* Positioning the tooltip */ 
+	
+    position: absolute; 
+    z-index: 1;  
+    top: 100%; 
+    left: 50%;  
+    margin-left: -120px; 
+	opacity: 2;
+	
+} 
+ 
+ /* Using hover effect on tooltip text */ 
+.tooltip:hover .tooltiptext {
+	
+    visibility: visible;
+    opacity: 2;	
+ 
+} 

@@ -1,0 +1,33 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.container{
+  text-align: center;
+  
+}
+.button{
+  border: 1px solid black;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: 'Helvetica', sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.5s;
+  position: relative;
+}
+.button1{
+  color: red;
+}
+.button2{
+		color: black;
+}
+.button1:hover{
+  color: yellow;
+}
+.button2:hover{
+			  color: silver;
+			}
+
+

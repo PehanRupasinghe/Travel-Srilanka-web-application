@@ -1,0 +1,52 @@
+.gal{
+        width:170px;
+        height:120px;
+        border-radius: 25%;
+        border: 2px solid #AD1457;
+
+        }
+
+        th{
+         font-family: Papyrus, fantasy;
+         font-size: 30px;
+         background-color:#f9ddff;
+         padding:5px;
+        }
+        body{
+          font-family:Arial,Helvetica, sans-serif;;
+          font-size: lem;
+          text-align:center;
+        }
+
+        table{
+          background-image:url("bg2.jpg");
+          background-size:cover;
+           margin-top: 40px;
+
+          width:60%
+
+
+
+        }
+        td{
+        padding:15px;
+
+        }
+        tr{
+        padding:15px;
+
+        }
+        div.desc {
+        padding: 5px;
+        text-align: center;
+        }
+
+.duneesha{
+padding:0px 0px 0px 1000px;
+}
+
+select{
+background-color:#211C81;
+padding:5px;
+color:white;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+      <head>
+		<title>MainPage</title>
+		<link rel="stylesheet" href="MainHoverStyle.css">
+		<link rel="stylesheet" href="NavStyle.css">
+	  </head>
+	  <body>
+	  <div id="main">
+		<nav>
+		<img src="1.png" alt="mainlogo" width="400" height="100px"  >
+			<ul>
+				<li><a href="MainPage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Gallery.html">Gallary</a></li>
+				<li><a href="Shop.html">Pricing</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="Sitemap.html">Site Map</a></li>
+				<li><a href="Feedback.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	  
+		<div style="max-width:100%">
+			<img class="slideSet" src="00.jpg" alt="Slideshow01" width="100%" height="450px">
+			<img class="slideSet" src="10.jpg" alt="Slideshow02" width="100%" height="450px">
+			<img class="slideSet" src="04.jpg" alt="Slideshow03" width="100%" height="450px">
+			<img class="slideSet" src="07.jpg" alt="Slideshow04" width="100%" height="450px">
+			<img class="slideSet" src="05.jpg" alt="Slideshow05" width="100%" height="450px">
+			<img class="slideSet" src="backgroundimage12.jpg" alt="Slideshow06" width="100%" height="450px">
+			<img class="slideSet" src="06.jpg" alt="Slideshow07" width="100%" height="450px">
+			<img class="slideSet" src="03.jpg" alt="Slideshow08" width="100%" height="450px">
+			<img class="slideSet" src="02.jpg" alt="Slideshow09" width="100%" height="450px">
+			<img class="slideSet" src="01.jpg" alt="Slideshow10" width="100%" height="450px">
+		</div>
+		
+	  <h3>FEATURED PLACE TO GO</h3>
+	  <form id = "oh" name = "oh">
+		<div id = "box">
+			<div class="container">
+				<input class="button button1" type="button" value="Dambulla Cave Temple" onclick="window.location.href='DambullaCaveTemple.html'" />
+				<input class="button button1" type="button" value="Sigiriya" onclick="window.location.href='sigiriya.html'" />
+				<input class="button button1" type="button" value="Horton Plains" onclick="window.location.href='Location.html'" />
+				<input class="button button1" type="button" value="Pigeon Island" onclick="window.location.href='pigion_island.html'" />
+			</div>
+		</div>
+	  </form>
+	  </br>
+	  </br>
+	  </br>
+	  </br>
+	  </br>
+	  <input class="button button2" type="button" value="This page was created by Pehan Rupasinghe" onclick="window.location.href='PehanCV.html'" />
+	  </div>
+	  
+		<script>
+		var set = 0;
+		imagetoGo();
+
+		function imagetoGo() {
+		  var count;
+		  var slide = document.getElementsByClassName("slideSet");
+		  for (count = 0; count < slide.length; count++) {
+			slide[count].style.display = "none";  
+		  }
+		  set++;
+		  if (set > slide.length) {set = 1}    
+		  slide[set-1].style.display = "block";  
+		  setTimeout(imagetoGo, 2000); // Change photo within every 2s
+		}
+		</script>
+	  
+	  </body>
+</html>

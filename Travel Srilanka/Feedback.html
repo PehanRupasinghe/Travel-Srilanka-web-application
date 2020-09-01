@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+      <head>
+		<title>Feedback</title>
+		<link rel="stylesheet" href="NavStyle.css">
+		<link rel="stylesheet" href="MainHoverStyle.css">
+		
+	  </head>
+	  <body>
+	  <div id="main">
+		<nav>
+		<img src="1.png" alt="mainlogo" width="400" height="85px"  />
+			<ul>
+				<<li><a href="MainPage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Gallery.html">Gallary</a></li>
+				<li><a href="Shop.html">Pricing</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="Sitemap.html">Site Map</a></li>
+				<li><a href="Feedback.html">Contact Us</a></li>
+			</ul>
+		</nav>
+	  
+		<br><br><br>
+		<table>
+			<tr>
+				<form method="post"  name="oh">
+				<div id = "box">
+					<h2>Send Us A Message</h2><br>
+					<div class="row">
+					<div class="label"><label>First Name</label></div><div class="cont"><input type="text" placeholder="First Name" size="25" name="uname" autofocus></div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="label"><label>Last Name</label></div><div class="cont"><input placeholder="Last Name" type="text" size="25" name="lname"></div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="label"><label>EMAIL</label></div><div class="cont"><input placeholder="example@gmail.com" type="email" size="25" name="email"></div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="label"><label>YOUR MASSAGE</label></div><div class="cont"><textarea name="messages" rows="4" cols="50"></textarea></div>
+					</div>
+					<br>
+    
+					<span class="star-rating">
+						Very Bad &nbsp;
+						Bad &nbsp;
+						Average &nbsp;
+						Good &nbsp;
+						Excellent &nbsp;
+<					</span>
+    
+					<div class="row">
+						<div class="labelradio">
+							<span>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ratings" value=" Very_Bad"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;          
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ratings" value="Bad"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ratings" value="Average"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ratings" value="Good"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="ratings" value="Excellent"><i></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							</span>
+						</div>
+					</div> 
+					<br>  
+    
+					<div id="box">
+						<button class="button button1"><input type="submit" value="Submit" onclick="validation()"></button>
+						<button class="button button1"><input type="reset" value="Reset"></button>
+					</div>
+				</div>
+				</form>
+			</tr>
+		</table >
+        <script>
+			function validation(){
+				var Name = document.forms["oh"]["uname"].value;
+				var Email = document.forms["oh"]["email"].value;   
+				var message= document.forms["oh"]["messages"].value;     
+				var rate =document.getElementsByName("ratings");   
+				var blankBox=false;  
+				var ratingcheck=false; 
+				var rating1="";    
+    
+				if (Name === "") {
+					alert("Name row must be filled out");
+					blankBox=true; 
+				}
+        
+				if (Email === "") {
+					alert("Email row must be filled out");
+					blankBox=true;  
+        
+				}  
+       
+				for (var i = 0, length = rate.length; i < length; i++) {
+					if (rate[i].checked) {			
+						rating1=(rate[i].value);
+						ratingcheck=true;                
+						break;     
+					}
+				}
+
+       
+				if (ratingcheck==false){			
+					alert("Rating must be checked");
+					blankBox=true; 
+				}
+        
+				if (blankBox==false){
+					alert("Dear "+Name+" , Thanks for your feedback.You have rated our site "+rating1 +" and your comment was " + message);
+				}                       
+			}
+        
+		</script>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<input class="button button1" type="button" value="This page was created by Pehan Rupasinghe" onclick="window.location.href='PehanCV.html'" />
+			</div>
+</body>
+</html>
