@@ -1,0 +1,104 @@
+
+/* Using 'title' id for styling */
+#title{ 
+   
+ padding: 3% 0 2% 0; 
+ color: black; 
+ font-weight: bold; 
+ font-family:Verdana, Geneva, sans-serif; 
+ font-size: 25px; 
+ border-width:10px; 
+ border-radius: 1px; 
+ 
+} 
+
+/* styling the body */
+body{ 
+
+background:#758CE9; 
+background-size:1600px 1000px; 
+padding-top:50px;  
+text-align:justify; 
+color:black; 
+} 
+
+/* Using 'button' class for styling */
+.button {
+	
+ color: black;	
+ background-color:green; 
+ display: inline-block; 
+ text-align: center; 
+ padding: 12px; 
+ font-weight: bold; 
+ font-size: 20px; 
+ font-family: 'Roboto'; 
+ position: fix;
+ top:50px; 
+ left:50px; 
+ border: balck; 
+ border-width:3px; 
+ border-radius: 20px; 
+ cursor: pointer; 
+  
+} 
+
+/* Using hover effect on 'button' class */ 
+.button:hover{ 
+
+ background-color:sienna; 
+ 
+} 
+
+/* Using 'timer' id for styling */
+#timer { 
+
+ font-family:'Roboto Slab', serif; 
+ color: darkviolet; 
+ font-size: 30px; 
+ font-weight: bold; 
+ position:fixed; 
+ margin-left:80%; 
+ margin-top:5%; 
+
+} 
+ 
+ /* Using 'questions' class for styling */ 
+.questions{ 
+ margin-left:2%; 
+ font-size:20px; 
+ font-family: 'Courier'; 
+} 
+
+ /* Styling p elements in 'questions' class*/ 
+.questions p{ 
+
+ padding: 0% 0 1% 0; 
+
+} 
+
+/* styling the header */
+header { 
+
+    padding: 50px; 
+    color: yellow;
+    font-size: 40px;	
+    background-color: navy; 
+    clear: left;
+    border margin:0; 
+    text-align: center; 
+    margin-top: -60px; 
+}
+
+/* Using 'results' id for styling */ 
+#results { 
+
+ color: black; 
+ font-size: 20px; 
+ font-weight: bold; 
+ text-align:justify;
+ font-family: 'Courier';
+ margin-left:2%;
+ 
+} 
+ 

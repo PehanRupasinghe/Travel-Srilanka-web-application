@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="NavStyle.css">
+
+	<!-- Setting the title name--> 
+	<title>Travel Sri Lanka</title> 
+
+	<!-- Linking an external style sheet for styling --> 
+	<link rel="stylesheet" href="about.css"> 
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/B685DB88-A955-7849-88A6-CEE6B8C2A6CD/main.js" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/59B2E713-4095-C240-A803-C572DBB5D865/abn/main.css"/><style>
+	body{
+		background-color: lightgreen;
+	}
+	.container{
+		position: relative;
+		margin-left: 600px;
+		width: auto;
+	}	
+	h1{
+		text-align: center;
+		text-decoration: underline;
+		color: blue;
+		font-size: 80px;
+	}
+	p.text{
+		white-space: pre;
+		font-size:27px;
+		margin-right: 500px;
+	}
+	</style>
+</head>
+<body>
+	<nav>
+		<img src="1.png" alt="mainlogo" width="400" height="85px"  />
+			<ul>
+				<li><a href="MainPage.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Gallery.html">Gallary</a></li>
+				<li><a href="Shop.html">Pricing</a></li>
+				<li><a href="quiz.html">Quiz</a></li>
+				<li><a href="Feedback.html">Site Map</a></li>
+				<li><a href="Feedback.html">Contact Us</a></li>
+			</ul>
+	</nav>
+	<h1><i>Products for sale</i></h1>
+	<div class="container">
+		<img src="camera-1769414__340.jpg">
+		<p class="text" >
+This is a camera helps you take quality pictures
+from your trips. Its zoom capability allows you
+to take more clear images at a great distance.
+
+Product Price:$2000
+Quantity: 70 left
+		</p>
+		<img src="overhead-view-hiking-gear-laid-260nw-165549260.wdp.jxr">
+		<p class="text" >
+This is an essential travel kit when you go on a
+hike. It has the necessary tools and a few other
+accessories to help you keep records of your
+journey.
+
+Product Price:$1000
+Quantity: 40 left
+		</p>
+		<img src="canoe-49179__340.jpg">
+		<p class="text" >
+Purchase our canoe to have a wonderful lake
+ride wherever you go. Only the best quality
+materials were used to craft this raft. 
+
+Product Price:$10000
+Quantity: 30 left
+		</p>
+		<form name="form1" action="#" methord="funct()">
+			<input type="checkbox" name="product" value="Camera"><p class="text">  Purchase Camera</p><br>
+			<input type="checkbox" name="product" value="TravelKit"><p class="text">  Purchase Travel kit</p><br>
+			<input type="checkbox" name="product" value="Canoe"><p class="text">  Purchase Canoe</p><br>
+			
+			<p class="text">Name :</p>
+			<input type="text" name="fullname"><br>
+			<br><br>
+			<input type="button" value="Place Order" onclick="funct()"></br>
+		</form>
+	</div>
+<script language="javascript">
+	function funct(){
+		var total=0;
+		var box=0;
+		for(count=0;count<3;count++){
+			if (form1.product[count].checked){
+				box=1;
+				if(count==0){
+					total = total + 2000;
+				}
+				if(count==1){
+					total = total + 1000;
+				}
+				if(count==2){
+					total = total + 10000;
+				}
+			}
+		}
+		if(box==1){
+			alert("your purchase is successful. Total bill value is:" + total);
+		}else{
+			alert("You should check the box to select an item.");
+		}
+	}
+</script>	
+</body>
+</html>

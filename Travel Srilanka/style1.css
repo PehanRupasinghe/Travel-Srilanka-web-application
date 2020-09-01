@@ -1,0 +1,41 @@
+
+/* Using 'column1' class for styling */
+.column1 {
+    float: left;
+    width: 33%;
+	padding-left:15px;
+    font-size:20px;
+	text-align:justify; 
+	
+}  
+
+/* Using 'column3' class for styling */
+.column3 {
+    
+    font-size:20px;
+	
+	padding-left:15px;
+	
+
+}	
+
+/* Styling the image element*/
+img {
+	width :400px;
+	height:500px ;
+}
+
+ 
+/* Using 'column2' id for styling */
+
+#column2{
+	
+	float: left;
+    width: 30%;
+	padding-right:-20px;
+	padding-bottom:600px;
+	font-size:25px;
+    
+
+	
+	

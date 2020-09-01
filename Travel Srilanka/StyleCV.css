@@ -1,0 +1,144 @@
+ /* set padding and margin to the all elements */
+ * {
+    margin: 0;
+    padding: 0;
+   }
+
+/* styling the body of the cv */
+
+ body {
+         font: 16px Helvetica, Sans-Serif;
+         line-height: 24px;
+         margin: 0;         
+         height:100%;
+                 
+      }
+
+ .clear {
+	 
+    clear: both;
+	
+     }
+
+/* setting the cv margin and width */
+
+ #page-wrap {
+	 
+    width: 800px;
+    margin: 40px auto 60px;
+	
+    }
+
+/* setting the picture to the top right corner and set the height and width */
+
+ .img {
+    
+    padding:0px 0px 5px 5px;
+	float:right;
+	height:330px;
+    width:200px;
+    
+    }
+
+/* styling the h1 element */
+
+ h1 {
+	 
+	font-size: 42px;
+    font-weight: bold;     
+    padding: 0 0 16px 0;
+    margin: 0 0 16px 0;
+	border-bottom: 1px solid #999;
+    letter-spacing: -2px;
+    
+    }
+
+/* styling the h2 element */
+ h2 {
+	 
+	margin: 0 0 6px 0; 
+    font-size: 20px;    
+    position: relative;
+    }
+
+/* styling the h2 and span elements */
+ h2 span {
+	 
+	font-style: italic;
+    font-family: Georgia, Serif; font-size: 16px; color: #999; font-weight: normal;
+    right: 0;
+    bottom: 0;    
+	position: absolute;
+    
+    }
+
+/* setting the margin for the paragraph */
+ p {
+	 
+    margin: 0 0 16px 0;
+    }
+
+/* styling the a element */
+ a {
+	 text-decoration: none;
+	 border-bottom: 1px dotted #0000e6;
+     color: #0000e6;     
+     
+     }
+
+/* adding the hover effect to the a element */
+
+ a:hover {
+	 color: black;   /* a element becomes black when the cursor is on it */
+     border-bottom-style: solid;
+     
+     }
+
+/* adding styles to the div tag with id name objective */
+
+ #description {
+	 
+	 float: left;
+     width: 500px;
+     
+    }
+
+	/* Styling the p element in the description  */
+	
+  #description p {
+	  
+	  text-align:justify;
+	  color: #000080;
+      font-family: Georgia, Serif;
+      font-style: italic;
+      	  
+      }
+
+/* Styling the dt element */
+  dt {
+	   padding: 0 26px 0 0;
+	   float: left;
+	   text-align: right;
+	   height: 100px;
+	   width: 150px;
+	   border-right: 1px solid #999;
+	   font-size: 18px;
+       font-style: italic;
+       font-weight: bold;
+          
+       }
+	   
+/* Styling the dd element */
+ dd {
+	   float: right;
+       width: 600px;
+       
+       }
+
+ dd.clear {
+	 
+      float: none;
+	  height: 15px;
+      margin: 0;
+      
+       }

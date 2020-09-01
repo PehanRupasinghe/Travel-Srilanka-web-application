@@ -1,0 +1,25 @@
+
+.column {
+    float: left;
+	font-size:22px;
+    width: 35%;
+	padding-left:20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+	width :400px;
+	height:200px ;
+}
+.gg1 { color:black;
+       background-color:violet;
+	   height:100px;
+	   padding-top:40px;
+	   border-style:solid;
+	
+
+	
